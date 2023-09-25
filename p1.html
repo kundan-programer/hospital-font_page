@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="x-icon" href="doctor-logo-49379.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiv-sang Hospital</title>
+
+
+</head>
+
+<!-- <link rel="stylesheet" href="p1.css"> -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .full {
+    background-image: url("https://t3.ftcdn.net/jpg/04/87/69/28/240_F_487692869_V8MZ1hLvhXQZKT50EV8Sh13AkdibGJb3.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+
+  @media (max-width:563px) {
+    body {
+      font-size: 15px;
+    }
+  }
+
+  #navbar {
+    display: flex;
+  }
+
+  #navbar::before {
+    content: "";
+    background-color: rgb(182, 213, 218);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* z-index: 0.3; */
+    opacity: 0.3;
+  }
+
+  .one {
+    height: 50px;
+    width: auto;
+  }
+
+  .one .logo {
+    color: rgb(245, 245, 245);
+    height: 25px;
+    width: 25px;
+  }
+
+  .logo img {
+    margin: 4px;
+    padding: 4px;
+    height: 40px;
+    width: 40px;
+    border-radius: 150px;
+  }
+
+  ul {
+    padding: 20px;
+  }
+
+  #navbar {
+    position: relative;
+    display: flex;
+  }
+
+  #navbar li {
+    position: relative;
+  }
+
+  #navbar ul li a {
+    color: rgb(0, 0, 0);
+    padding: 1px 2px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+
+
+  ul li {
+    display: inline;
+    padding: 25px;
+    position: relative;
+    /* flex-direction: row; */
+  }
+
+  li:hover {
+    color: rgb(179, 192, 245);
+    font-size: 18px;
+    background-color: rgb(89, 156, 156);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+
+
+  .navbar1 {
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-top: 4px;
+    opacity: 0.9;
+  }
+
+
+  @media (max-width:563px) {
+    ul {
+      transform: translate(50%);
+      transition-duration: 2s;
+      margin-left: 40%;
+      /* background-color: black; */
+    }
+
+    #navbar {
+      background-color: rgb(89, 156, 156);
+      /* opacity: 0.4; */
+    }
+  }
+
+  @media (min-width:563px) {
+    .navbar1 {
+      display: none;
+
+    }
+  }
+
+  @media (max-width:563px) {
+    #navbar li {
+      display: none;
+      transition: all;
+    }
+  }
+
+  @media(max-width:563px) {
+    #navbar img:hover {
+      transition-duration: 1s;
+      transform: translateY(200px);
+    }
+  }
+
+
+  @media (max-width:563px) {
+
+    #navbar ul {
+      display: inline-block;
+      margin: auto;
+      height: auto;
+    }
+
+    #navbar li {
+      display: flex;
+      color: blue;
+      background-color: rgb(119, 167, 167);
+      border: none;
+      flex-direction: row;
+    }
+  }
+
+
+
+
+  .quotes {
+    justify-content: center;
+    text-align: center;
+    margin-top: 9px;
+  }
+
+  .quotes:hover {
+    color: rgb(0, 49, 247);
+    font-size: 20px;
+  }
+
+
+
+  .bodys {
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 14%;
+    color: rgb(10, 10, 10);
+  }
+
+
+  .bodys h1 {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: cursive;
+    color: rgb(0, 49, 247);
+
+  }
+
+  @media (max-width:600px) {
+    .bodys h1 {
+      font-size: 25px;
+      /* color: rgb(249, 0, 0); */
+    }
+  }
+
+  .bodys p {
+    font-weight: bold;
+    font-family: cursive;
+    color: rgb(247, 0, 74);
+  }
+
+
+  .three {
+    height: 20px;
+    width: 210px;
+    /* border: 2px solid rgb(0, 195, 255); */
+    background-color: goldenrod;
+    justify-items: center;
+    /* text-align: center; */
+    margin-left: 240px;
+    padding-left: 0px;
+  }
+
+  .searchbar {
+    height: 10px;
+    width: 20px;
+    /* border: 2px solid rgb(14, 75, 229); */
+    /* background-color: rgb(14, 75, 229); */
+    display: inline;
+    justify-items: center;
+    padding: 2px;
+    margin-top: 2px;
+  }
+
+  /* .searchBox {
+    font-size: 15px;
+  } */
+
+  .four {
+    height: 28px;
+    /* width: 120px; */
+    margin-left: 35%;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0px;
+    opacity: 1.91;
+
+  }
+
+  .five {
+    height: 28px;
+    width: 200px;
+    border: none;
+    background-color: rgb(108, 213, 213);
+    flex-direction: row;
+    font-weight: bold;
+    color: blue;
+  }
+
+  .six {
+    height: 28px;
+    width: 28.9px;
+    /* background-color: rgb(255, 255, 255); */
+    /* border: 0px solid white none; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(108, 213, 213);
+    flex-direction: row;
+  }
+
+  .six i {
+    margin-top: 5px;
+    font-size: 20px;
+    flex-direction: row;
+  }
+
+  .six i:hover {
+    font-size: 20px;
+  }
+
+  .seven {
+    height: 35px;
+    width: auto;
+    border: 2px solid rgb(233, 9, 9);
+    background-color: rgb(207, 25, 25);
+    opacity: 0.99;
+  }
+
+
+
+  /* appontment  from doctor */
+
+
+
+  .nine {
+    background-repeat: no-repeat;
+    /* height: 100%; */
+    /* width: 100%; */
+    /* border: 2px solid rgb(12, 244, 228); */
+    display: flex;
+  }
+
+  .nine img {
+    display: inline;
+    /* border: 2px solid rgb(30, 255, 0); */
+    margin-top: 2px;
+    height: 350px;
+    width: 30%;
+    margin-right: 0px;
+    transition-duration: 10s;
+  }
+
+
+  .appointement {
+    padding: 20px 0px;
+    height: 315px;
+    font-weight: bold;
+    font-size: 20px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTcrSnElPo184Zv7VSzhC6srBPJYszZXLuTQ&usqp=CAU");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    margin: auto;
+  }
+
+  .appointement p {
+    padding: 50px;
+    font-size: 20px;
+    display: flex;
+    margin: auto;
+  }
+
+  .appointement a {
+    font-weight: bold;
+    color: rgb(249, 46, 46);
+    margin-left: 20px;
+    display: flex;
+    margin: auto;
+  }
+
+  .appointement a:hover {
+    font-size: 30px;
+  }
+
+  .ten {
+    height: 40px;
+    width: auto;
+    border: none;
+    background-color: rgb(75, 64, 64);
+  }
+
+  @media (max-width:100px) {
+    .nine img {
+      transition-duration: 4s;
+      /* transform: translateY(200px); */
+    }
+  }
+
+  @media (min-width:100px) {
+    .nine img {
+      transition-duration: 4s;
+      z-index: -1;
+      margin-left: -1px;
+      /* transform: translateX(200px); */
+    }
+  }
+
+  .weblogo {
+    margin: 0%;
+    height: 100%;
+    background-color: rgb(158, 230, 230);
+    /* background-image: url("https://ehospital.gov.in/ehospitalsso/images/EhospitalImage1.jpg"); */
+    font-size: 20px;
+    border: none;
+    height: 250px;
+    width: 100%;
+    color: rgb(179, 0, 255);
+    /* font-weight: bold; */
+    /* display: inline; */
+  }
+
+  .weblogo i {
+    margin-left: 10px;
+    padding: 3px;
+    color: rgb(0, 0, 0);
+    /* display: ; */
+  }
+
+  .weblogo i:hover {
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  .note {
+    margin: 0%;
+  }
+
+  .mycon {
+    margin-top: 0px;
+    padding: 40px;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .mycon i {
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .end {
+    justify-content: center;
+    /* border: 2px solid rgb(242, 17, 9); */
+    width: 70%;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 3%;
+  }
+
+  .l img {
+    height: 250px;
+    width: 100%;
+
+  }
+</style>
+
+<body>
+  <div class="full">
+
+
+    <nav id="navbar">
+      <div class="one">
+        <div class="logo">
+          <img src="https://t3.ftcdn.net/jpg/05/14/36/48/360_F_514364850_xLOQX6SOY2qcjAIcTowsi3xYvHmhmvs0.jpg"
+            alt="logo">
+        </div>
+      </div>
+
+
+      <ul>
+        <li class="item"><a href="#"><i class='bx bxs-home-circle'></i>Home</a></li>
+        <li class="item"><a href="#">Service</a></li>
+        <li class="item"><a href="https://sites.google.com/view/physioravi">About us</a></li>
+        <li class="item"><a href="#"><i class='bx bxs-contact'></i>Contact</a></li>
+      </ul>
+
+      <img class="navbar1"
+        src="https://cdn.icon-icons.com/icons2/3215/PNG/512/hamburger_menu_navbar_options_icon_196495.png"
+        alt="navbar1">
+    </nav>
+
+
+    <div class="quotes">
+      <p>“Sometimes, the best thing we can do for our patients is to tell them what the best behavior is and then
+        negotiate something they can live with.”</p>
+    </div>
+
+
+    <div class="bodys">
+      <h1>Welcome to Biggest Online Hospital Management...</h1>
+      <p>“I think health care is more about love than about most other things. If there isn’t at the core of these two
+        human beings who have agreed to be in a relationship where one is trying to help relieve the suffering of
+        another, which is love, you can’t get to the right answer here.”</p>
+    </div>
+
+
+    <!-- Search for Books -->
+    <div class="four">
+
+      <!-- <input class="five" type="text" placeholder="Search Doctor"> -->
+
+      <!-- <div class="six"><i class='bx bx-search'></i></div> -->
+
+    </div>
+
+  </div>
+
+
+  <div class="seven"> </div>
+  <!-- <link rel="stylesheet" href="https://forms.gle/MUauSdpAbjFd6gX56"> -->
+
+
+  <div class="nine">
+
+    <img src="child-care.png" alt="child-care">
+
+    <div class="appointement">
+
+      <p>Take an appointement → fill the form/click the link &nbsp; <a href="https://forms.gle/MUauSdpAbjFd6gX56">click
+          here</a>
+
+
+    </div>
+
+
+  </div>
+  <div class="ten"></div>
+
+  <div class="weblogo">
+    <div class="mycon">
+      <i class='bx bxl-facebook'></i>
+      <i class='bx bxl-instagram'></i>
+      <i class='bx bxs-contact'></i>
+
+      <div class="note">Note:- open All days 8 Am to 7pm</div>
+    </div>
+    <div class="end"> © NIC, 2015 | All Rights Reserved®. | Govt. Of India Build No: 4.1.55 Updated on March 23, 2023
+      ,Thursday
+    </div>
+
+  </div>
+
+  <!-- <div class="l"><img src="https://ehospital.gov.in/ehospitalsso/images/EhospitalImage1.jpg" alt=""></div> -->
+
+</body>
+
+</html>
